@@ -1,0 +1,187 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+a {
+    color: #c1272d; /* Moroccan red color */
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #006233; /* Moroccan green color */
+    text-decoration: none;
+}
+
+/* Header Styles */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #c1272d !important; /* Moroccan red color */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+/* Hero Section */
+.hero-section {
+    margin-bottom: 2rem;
+}
+
+.hero-img {
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.hero-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    font-weight: 600;
+}
+
+/* Post Styles */
+.post-content {
+    line-height: 1.8;
+}
+
+.post-meta {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+/* Comment Styles */
+.comment {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.comment-author {
+    font-weight: bold;
+}
+
+.comment-date {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+/* Form Styles */
+.form-control:focus {
+    border-color: #c1272d; /* Moroccan red color */
+    box-shadow: 0 0 0 0.2rem rgba(193, 39, 45, 0.25);
+}
+
+.btn-primary {
+    background-color: #c1272d; /* Moroccan red color */
+    border-color: #c1272d;
+}
+
+.btn-primary:hover {
+    background-color: #a01f24;
+    border-color: #a01f24;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 2rem;
+    background-color: #006233 !important; /* Moroccan green color */
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #f8f9fa;
+    text-decoration: underline;
+}
+
+/* Admin Dashboard */
+.admin-sidebar {
+    background-color: #343a40;
+    color: #fff;
+    min-height: calc(100vh - 56px);
+}
+
+.admin-sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.admin-sidebar .nav-link:hover {
+    color: #fff;
+}
+
+.admin-sidebar .nav-link.active {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 767.98px) {
+    .admin-sidebar {
+        min-height: auto;
+    }
+    
+    .hero-img {
+        height: 300px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+} 
